@@ -1,0 +1,25 @@
+Measure > NUR ausgewertet werden bei EINFÜGEN in "Wert"
+	> ZEILENWEISE FILTER-Kontext des Visuals
+	>> SCOPE := ZEILE innerhalb des VISUALS
+	>> ISINSCOPE(...) fragt TRUE / FALSE nach SCOPE
+	>> KANN NICHT als LEGENDE,... verwendet werden!
+	> RESULT = SCALAR
+
+VISUALS	> STUKTUR bereitstellen, um Auswertung zu ermöglichen
+	> ART der Struktur definiert wie das GROUP BY läuft
+
+Cal COL	> SPALTENWEISE FILTER-Kontext on RAW DATA
+	> ZEILENWEISE Berechnung ist NICHT MÖGLICH!!
+	>> LEGENDEN && KATEGORIEN && FILTER im VISUAL
+	> RESULT = VEKTOR
+
+X-FCTS	> ITERATOR-Funktionen >> LOOPS (SUMX, MINX, MAXX)
+	>> AVERAGEX() = Durchschnitt aller ERGEBNISSE
+	> das Auswertungsergebnis für JEDE Zeile aggregieren
+	> SUMX( TABELLE ; AUSDRUCK )
+	>> ZEILENWEISE (wie in einem MEASURE!) auswerten
+	>> SPALTENWEISE (wie in Cal COL) in Tabelle schreiben
+	>> TSQL :: CURSOR-LOGIK <=> X-FCTS in PowerBI 
+	> RETURN = VECTOR ; RESULT = SCALAR
+
+
