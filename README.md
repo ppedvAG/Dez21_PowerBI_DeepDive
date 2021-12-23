@@ -7,6 +7,5 @@
 - [ ] Data
 - [ ] Gallery
 - [ ] Links
-- [ ] Visuals
 - [ ] PowerBI Beginn
 - [ ] PowerBI Environment R Python
